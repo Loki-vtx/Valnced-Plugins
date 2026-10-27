@@ -1,0 +1,20 @@
+{
+	"format": 1,
+	"id": "dev.loki.vtx.SilentEdit",
+	"name": "SilentEdit",
+	"description": "edit a message without the (edited) thingy appear (NOTE: DO NOT EDIT AN OLD MESSAGE WITH THIS!).",
+	"author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+	"icon": "TrashIcon",
+	"version": "1.0.0",
+	"dependencies": {
+		"valenced.api": {
+			"version": ">=1 <2"
+		},
+		"discord": {
+			"version": "*"
+		}
+	},
+	"dist": {
+		"script": "index.js"
+	}
+}
