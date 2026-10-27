@@ -4,18 +4,31 @@
   "description": "bunch of plugins to describe the meaning of uselessness..",
   "plugins": {
     "dev.loki.vtx.SilentDelete": {
-      "name": "SilentEdit",
+      "name": "SilentDelete",
       "description": "Delete a message without being caught by freaky message loggers.",
       "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"\")",
       "icon": "TrashIcon",
       "channels": {
-        "latest": "1.0.0"
+        "latest": "1.0.1"
       },
       "versions": {
         "1.0.0": {
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.SilentDelete@1.0.0.zip",
           "sha256": "9947291a83c3cc41d761d6de2800dfb8f3047eb8bfe76f2b44e1fa6dcdbe7a67",
           "size": 2554,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        },
+        "1.0.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.SilentDelete@1.0.1.zip",
+          "sha256": "20d20435046f12347d65ecfd4cc0ad30ab9e34e147b12e03ab4920b0ee7faafb",
+          "size": 2549,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
