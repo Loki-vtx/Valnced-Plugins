@@ -50,6 +50,54 @@
           }
         }
       }
+    },
+    "dev.loki.vtx.copybios": {
+      "name": "CopyBios",
+      "description": "Copy profile fields.",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.copybios@1.0.0.zip",
+          "sha256": "8756a8e9e4f3b28cb145185f00f8df8b2906cc20a9e4d6c2bfec68ade057d8ba",
+          "size": 856,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "dev.loki.vtx.token.grabber": {
+      "name": "TokenGrabber",
+      "description": "Grab Your Own token by typing: /token-get",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "KeyIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.token.grabber@1.0.0.zip",
+          "sha256": "954bf91e8454cca7a7b7c94d066e88ba446ef0239c0c71f365b63b04ea7704b8",
+          "size": 2298,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
     }
   }
 }
