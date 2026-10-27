@@ -1,7 +1,7 @@
 {
 	"format": 1,
 	"id": "dev.loki.vtx.SilentDelete",
-	"name": "SilentEdit",
+	"name": "SilentDelete",
 	"description": "Delete a message without being caught by freaky message loggers.",
 	"author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"\")",
 	"icon": "TrashIcon",
