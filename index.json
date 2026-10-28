@@ -6,10 +6,10 @@
     "dev.loki.vtx.SilentDelete": {
       "name": "SilentDelete",
       "description": "Delete a message without being caught by freaky message loggers.",
-      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"\")",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
       "icon": "TrashIcon",
       "channels": {
-        "latest": "1.0.1"
+        "latest": "1.0.2"
       },
       "versions": {
         "1.0.0": {
@@ -29,6 +29,19 @@
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.SilentDelete@1.0.1.zip",
           "sha256": "20d20435046f12347d65ecfd4cc0ad30ab9e34e147b12e03ab4920b0ee7faafb",
           "size": 2549,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        },
+        "1.0.2": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.SilentDelete@1.0.2.zip",
+          "sha256": "000881793860c12fead0d41058cc44325fe71dbb39ea01c13beb6473a41472da",
+          "size": 2555,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
