@@ -3,6 +3,30 @@
   "name": "White-Forest-Plugs",
   "description": "bunch of plugins to describe the meaning of uselessness..",
   "plugins": {
+    "dev.loki-vtx.SilentEdit": {
+      "name": "SilentEdit",
+      "description": "edit a message without the (edited) thingy appear (NOTE: DO NOT EDIT AN OLD MESSAGE WITH THIS!).",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "PencilSparkleIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.SilentEdit@1.0.1.zip",
+          "sha256": "4e796281380756534da61bf8ae14fc4ac39bef09ed3bbf7e51d8211469eb9409",
+          "size": 2595,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
     "dev.loki-vtx.copybios": {
       "name": "Copy Bios",
       "description": "Makes bio text in profiles selectable",
@@ -55,15 +79,28 @@
       "name": "Copy Proxy Link",
       "description": "Copy the proxy link of any image, the difference? proxy link does not expire by time.",
       "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
-      "icon": "PencilIcon",
+      "icon": "LinkPlusIcon",
       "channels": {
-        "latest": "0.0.1"
+        "latest": "1.0.0"
       },
       "versions": {
         "0.0.1": {
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.proxy.link@0.0.1.zip",
           "sha256": "56b99d792ef5f6568e035c882f926a3f44eda1ddc4de1527050cb65915d6b202",
           "size": 1551,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        },
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.proxy.link@1.0.0.zip",
+          "sha256": "dc7c7cd0153d1a3b4728efad53af7b2931513bfff12f0bb3fd9ef4514d88f41c",
+          "size": 1553,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
