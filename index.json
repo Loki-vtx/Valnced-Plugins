@@ -51,6 +51,30 @@
         }
       }
     },
+    "dev.loki-vtx.proxy.link": {
+      "name": "Copy Proxy Link",
+      "description": "Copy the proxy link of any image, the difference? proxy link does not expire by time.",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "0.0.1"
+      },
+      "versions": {
+        "0.0.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.proxy.link@0.0.1.zip",
+          "sha256": "56b99d792ef5f6568e035c882f926a3f44eda1ddc4de1527050cb65915d6b202",
+          "size": 1551,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
     "dev.loki-vtx.token.grabber": {
       "name": "TokenGrabber",
       "description": "Grab Your Own token by typing: /token-get",
