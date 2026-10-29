@@ -52,18 +52,31 @@
       }
     },
     "dev.loki-vtx.custom.avatars": {
-      "name": "Custom Avatars",
+      "name": "Override User Avatar",
       "description": "Overrides users avatars with a custom one. (LOCALLY!).",
       "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
-      "icon": "PencilIcon",
+      "icon": "UserIcon",
       "channels": {
-        "latest": "0.0.1"
+        "latest": "1.0.0"
       },
       "versions": {
         "0.0.1": {
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.custom.avatars@0.0.1.zip",
           "sha256": "d8dc043aefb49ceffb1c7a3f76611e55bd36b7bb390c85ae98712dc0e44c45d9",
           "size": 1371,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        },
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.custom.avatars@1.0.0.zip",
+          "sha256": "8a3462525317f84de1532fdcae5b26700c318bb767c6905112d2c00f2fbc4728",
+          "size": 1373,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
@@ -175,6 +188,78 @@
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.SilentDelete@1.0.2.zip",
           "sha256": "000881793860c12fead0d41058cc44325fe71dbb39ea01c13beb6473a41472da",
           "size": 2555,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "dev.loki.vtx.SilentEdit": {
+      "name": "SilentEdit",
+      "description": "edit a message without the (edited) thingy appear (NOTE: DO NOT EDIT AN OLD MESSAGE WITH THIS!).",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "TrashIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.SilentEdit@1.0.0.zip",
+          "sha256": "0e99f83adaf15c660d50e6ce6f484c9bdef2a9e16954e4e0218aa3d3f3097859",
+          "size": 2592,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "dev.loki.vtx.copybios": {
+      "name": "CopyBios",
+      "description": "Copy profile fields.",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.copybios@1.0.0.zip",
+          "sha256": "8756a8e9e4f3b28cb145185f00f8df8b2906cc20a9e4d6c2bfec68ade057d8ba",
+          "size": 856,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "dev.loki.vtx.token.grabber": {
+      "name": "TokenGrabber",
+      "description": "Grab Your Own token by typing: /token-get",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "KeyIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki.vtx.token.grabber@1.0.0.zip",
+          "sha256": "954bf91e8454cca7a7b7c94d066e88ba446ef0239c0c71f365b63b04ea7704b8",
+          "size": 2298,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
