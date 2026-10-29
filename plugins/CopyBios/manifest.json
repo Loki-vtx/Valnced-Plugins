@@ -1,11 +1,11 @@
 {
 	"format": 1,
-	"id": "dev.loki.vtx.copybios",
-	"name": "CopyBios",
-	"description": "Copy profile fields.",
+	"id": "dev.loki-vtx.copybios",
+	"name": "Copy Bios",
+	"description": "Makes bio text in profiles selectable",
 	"author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
 	"icon": "PencilIcon",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"

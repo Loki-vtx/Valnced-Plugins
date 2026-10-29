@@ -1,4 +1,3 @@
-// test fucked up code, the first one had some little problems with start and cleanup shit, and something helped me fixing it ig....
 import { getModules } from '@valenced/modules/finders'
 import { withName } from '@valenced/modules/finders/filters'
 import { ReactNative } from '@valenced/react'
@@ -69,4 +68,4 @@ export default plugin({
         }
     },
 })
-// alao dont ask why theres this if plugin stared late...  just me fcking around}
+// reload is needed for the plugin to start
