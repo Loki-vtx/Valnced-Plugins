@@ -27,6 +27,30 @@
         }
       }
     },
+    "dev.loki-vtx.custom.avatars": {
+      "name": "Custom Avatars",
+      "description": "Overrides users avatars with a custom one. (LOCALLY!).",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "0.0.1"
+      },
+      "versions": {
+        "0.0.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.custom.avatars@0.0.1.zip",
+          "sha256": "d8dc043aefb49ceffb1c7a3f76611e55bd36b7bb390c85ae98712dc0e44c45d9",
+          "size": 1371,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
     "dev.loki-vtx.token.grabber": {
       "name": "TokenGrabber",
       "description": "Grab Your Own token by typing: /token-get",
