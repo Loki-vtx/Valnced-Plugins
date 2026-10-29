@@ -3,6 +3,54 @@
   "name": "White-Forest-Plugs",
   "description": "bunch of plugins to describe the meaning of uselessness..",
   "plugins": {
+    "dev.loki-vtx.copybios": {
+      "name": "Copy Bios",
+      "description": "Makes bio text in profiles selectable",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.copybios@1.0.1.zip",
+          "sha256": "362023d84f0fd60820b84f7ba03b31cb64ad6a24cc0b72c5c0ab779a687ee53e",
+          "size": 867,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "dev.loki-vtx.token.grabber": {
+      "name": "TokenGrabber",
+      "description": "Grab Your Own token by typing: /token-get",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "KeyIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.token.grabber@1.0.1.zip",
+          "sha256": "4362ba93e80ef810e1a81fc6e99f2780b008c20880d242ee999e170fa37b3b88",
+          "size": 2296,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
     "dev.loki.vtx.SilentDelete": {
       "name": "SilentDelete",
       "description": "Delete a message without being caught by freaky message loggers.",
