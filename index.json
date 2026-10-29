@@ -3,6 +3,30 @@
   "name": "White-Forest-Plugs",
   "description": "bunch of plugins to describe the meaning of uselessness..",
   "plugins": {
+    "dev.loki-vtx.SilentDelete": {
+      "name": "SilentDelete",
+      "description": "Delete a message without being caught by freaky message loggers.",
+      "author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
+      "icon": "TrashIcon",
+      "channels": {
+        "latest": "1.0.2"
+      },
+      "versions": {
+        "1.0.2": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.SilentDelete@1.0.2.zip",
+          "sha256": "80ae261eede677964f5071597140bcce287971a83331ab9ea1ab4af3e139e73a",
+          "size": 2553,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
     "dev.loki-vtx.SilentEdit": {
       "name": "SilentEdit",
       "description": "edit a message without the (edited) thingy appear (NOTE: DO NOT EDIT AN OLD MESSAGE WITH THIS!).",
