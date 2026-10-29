@@ -1,11 +1,11 @@
 {
 	"format": 1,
 	"id": "dev.loki-vtx.custom.avatars",
-	"name": "Custom Avatars",
+	"name": "Override User Avatar",
 	"description": "Overrides users avatars with a custom one. (LOCALLY!).",
 	"author": "Loki-vtx <918437723755384832> (https://github.com/Loki-vtx \"GitHub\")",
-	"icon": "PencilIcon",
-	"version": "0.0.1",
+	"icon": "UserIcon",
+	"version": "1.0.0",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"
