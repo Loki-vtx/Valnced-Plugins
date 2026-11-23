@@ -31,3 +31,13 @@ export function toImageAttachment(attachment: Attachment): Attachment {
 		size: image.size,
 	}
 }
+
+/** Whether an attachment is a picture this plugin can convert: a PNG or JPEG with a download link. */
+export function isImageAttachment(attachment: unknown): attachment is Attachment {
+	const candidate = attachment as Partial<Attachment> | null | undefined
+	return (
+		typeof candidate?.filename === 'string' &&
+		/\.(png|jpe?g)$/i.test(candidate.filename) &&
+		typeof candidate.url === 'string'
+	)
+}

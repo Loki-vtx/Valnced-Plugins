@@ -2,10 +2,10 @@
 	"format": 1,
 	"id": "dev.loki-vtx.vtf-preview",
 	"name": "VTF Preview",
-	"description": "Shows Source Engine VTF images inline in chat.",
+	"description": "Shows Source Engine VTF images inline in chat and send vtfs images straight up from discord.",
 	"author": "Loki-vtx",
 	"icon": "ImageIcon",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"

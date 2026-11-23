@@ -33,3 +33,10 @@ export interface ConvertedImage {
 	height: number
 	size: number
 }
+
+/** Decoded pixels: RGBA, 8 bits per channel, rows from the top. */
+export interface RgbaImage {
+	width: number
+	height: number
+	rgba: Uint8Array
+}

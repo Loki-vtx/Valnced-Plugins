@@ -2,6 +2,7 @@ import { onFluxEventDispatched } from '@valenced/discord/flux'
 import { MESSAGE_LIST_EVENTS, SINGLE_MESSAGE_EVENTS, TAG } from './constants'
 import { patchMessage } from './patch'
 import { startQueue } from './queue'
+import { installSendMenu } from './menu-vtf'
 import type { DiscordMessage } from './types'
 
 /**
@@ -13,6 +14,12 @@ import type { DiscordMessage } from './types'
 export default plugin({
 	start({ cleanup }) {
 		cleanup(startQueue())
+
+		try {
+			installSendMenu(cleanup)
+		} catch (error) {
+			console.warn(TAG, 'send menu patch failed:', String(error))
+		}
 
 		for (const type of SINGLE_MESSAGE_EVENTS) {
 			cleanup(
