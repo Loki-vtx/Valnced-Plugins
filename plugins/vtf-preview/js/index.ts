@@ -1,4 +1,5 @@
-// half of ts is ai. thats just a fun project not an actual plugin im thinking of.
+import { instead } from '@valenced/patcher'
+import { React } from '@valenced/react'
 import { decodeVtf } from './vtf'
 import { encodePng, toBase64 } from './png'
 
@@ -45,7 +46,6 @@ function loadVtf(url: string): Promise<Loaded> {
 
 // Shows one VTF file. It has its own state, so the rest of the message is not affected.
 function VtfImage({ url, filename }: { url: string; filename: string }) {
-	const { React } = revenge.react
 	const { Image, Text } = revenge.react.ReactNative
 	const [state, setState] = React.useState<{ loaded?: Loaded; error?: string }>({})
 
@@ -104,12 +104,31 @@ function collectVtf(node: any, out: VtfRef[], depth: number, seen: Set<any>) {
 	}
 }
 
+// Short description of a value's keys, for debugging. Shows names only, never big values.
+function shape(node: any, depth = 0): string {
+	if (node === null) return 'null'
+	if (Array.isArray(node)) {
+		if (depth > 3) return `[${node.length}]`
+		return `[${node.slice(0, 3).map(n => shape(n, depth + 1)).join(', ')}]`
+	}
+	if (typeof node !== 'object') return typeof node
+	if (depth > 3) return '{...}'
+	const keys = Object.keys(node).filter(k => !k.startsWith('_')).slice(0, 15)
+	return `{${keys.map(k => `${k}:${shape(node[k], depth + 1)}`).join(', ')}}`
+}
+
+let debugLogs = 0
+
 function addVtfImages(result: any, args: any[]): any {
 	const found: VtfRef[] = []
 	collectVtf(args, found, 0, new Set())
+	if (debugLogs < 3) {
+		debugLogs++
+		console.log(TAG, 'render args:', shape(args))
+		console.log(TAG, 'vtf attachments found:', found.length)
+	}
 	if (found.length === 0) return result
 
-	const { React } = revenge.react
 	const images = found.map((ref, i) =>
 		React.createElement(VtfImage, {
 			key: `vtf-${i}-${ref.url}`,
@@ -125,6 +144,7 @@ export default plugin({
 		const unpatches: Array<() => void> = []
 		let patched = false
 
+		// The finder is a global of the Revenge runtime, not part of @revenge-mod/*.
 		let stopSearch: (() => void) | undefined
 		try {
 			stopSearch = revenge.discord.utils.modules.finders.getModuleWithImportedPath(
@@ -137,7 +157,7 @@ export default plugin({
 					}
 					patched = true
 					unpatches.push(
-						revenge.patcher.instead(ns, 'default', (args: any[], original: any) => {
+						instead(ns, 'default', (args: any[], original: any) => {
 							const result = original(...args)
 							try {
 								return addVtfImages(result, args)
