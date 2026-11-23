@@ -5,7 +5,7 @@
 	"description": "Shows Source Engine VTF images inline in chat.",
 	"author": "Loki-vtx",
 	"icon": "ImageIcon",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"
