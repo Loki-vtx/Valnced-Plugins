@@ -175,11 +175,11 @@
     },
     "dev.loki-vtx.vtf-preview": {
       "name": "VTF Preview",
-      "description": "Shows Source Engine VTF images inline in chat.",
+      "description": "Shows Source Engine VTF images inline in chat and send vtfs images straight up from discord.",
       "author": "Loki-vtx",
       "icon": "ImageIcon",
       "channels": {
-        "latest": "0.3.0"
+        "latest": "0.3.1"
       },
       "versions": {
         "0.1.0": {
@@ -212,6 +212,19 @@
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.vtf-preview@0.3.0.zip",
           "sha256": "7b2e4c334d52958f888c890c9852166916bf79a1ceef09e8fc399ac9cc3b9009",
           "size": 3708,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        },
+        "0.3.1": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.vtf-preview@0.3.1.zip",
+          "sha256": "93ee2464433830adf24b1f349ac8fa47a854dbcb4e46dcdd02d14657832d0791",
+          "size": 9510,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
