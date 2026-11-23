@@ -172,6 +172,30 @@
           }
         }
       }
+    },
+    "dev.loki-vtx.vtf-preview": {
+      "name": "VTF Preview",
+      "description": "Shows Source Engine VTF images inline in chat.",
+      "author": "Loki-vtx",
+      "icon": "ImageIcon",
+      "channels": {
+        "latest": "0.1.0"
+      },
+      "versions": {
+        "0.1.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.vtf-preview@0.1.0.zip",
+          "sha256": "243687c36f7bd8e639debdf71dc48a0a52b907a3694cc119fd5d01b470039052",
+          "size": 3695,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
     }
   }
 }
