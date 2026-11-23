@@ -179,13 +179,26 @@
       "author": "Loki-vtx",
       "icon": "ImageIcon",
       "channels": {
-        "latest": "0.1.0"
+        "latest": "0.2.0"
       },
       "versions": {
         "0.1.0": {
           "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.vtf-preview@0.1.0.zip",
           "sha256": "243687c36f7bd8e639debdf71dc48a0a52b907a3694cc119fd5d01b470039052",
           "size": 3695,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        },
+        "0.2.0": {
+          "url": "https://loki-vtx.github.io/Valnced-Plugins/pool/dev.loki-vtx.vtf-preview@0.2.0.zip",
+          "sha256": "d981c204ae11d1354f632596869014f33de89717b4a85b969abbd2285e3470b0",
+          "size": 3872,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
