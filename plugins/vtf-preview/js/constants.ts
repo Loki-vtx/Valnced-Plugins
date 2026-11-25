@@ -27,11 +27,8 @@ export const MESSAGE_LIST_EVENTS = [
 /** Largest side of a picture sent as VTF. Smaller keeps the upload under Discord's size limit. */
 export const SEND_MAX_DIMENSION = 512
 
-/** Text of the message menu row that sends the pictures of a message as VTF. */
-export const SEND_LABEL = 'Send as VTF'
-
-/** The labels of the copy rows in the message menu. The new row goes in the box that holds them. */
-export const MENU_COPY_LABELS = ['Copy Text', 'Copy Message Link', 'Copy Message ID']
+/** Accessibility label of the input bar button that converts the pending pictures to VTF. */
+export const SEND_LABEL = 'Convert to VTF'
 
 /** How long after the menu is drawn its message can still be used, in milliseconds. */
 export const TARGET_MAX_AGE_MS = 5000

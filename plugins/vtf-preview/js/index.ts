@@ -2,7 +2,7 @@ import { onFluxEventDispatched } from '@valenced/discord/flux'
 import { MESSAGE_LIST_EVENTS, SINGLE_MESSAGE_EVENTS, TAG } from './constants'
 import { patchMessage } from './patch'
 import { startQueue } from './queue'
-import { installSendMenu } from './menu-vtf'
+import { installInputButton } from './input-button'
 import type { DiscordMessage } from './types'
 
 /**
@@ -16,9 +16,9 @@ export default plugin({
 		cleanup(startQueue())
 
 		try {
-			installSendMenu(cleanup)
+			installInputButton(cleanup)
 		} catch (error) {
-			console.warn(TAG, 'send menu patch failed:', String(error))
+			console.warn(TAG, 'input button patch failed:', String(error))
 		}
 
 		for (const type of SINGLE_MESSAGE_EVENTS) {

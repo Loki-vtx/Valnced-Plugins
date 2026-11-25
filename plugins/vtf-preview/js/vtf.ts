@@ -199,7 +199,7 @@ function rgb565ToRgb(v: number): [number, number, number] {
 	]
 }
 
-function decodeDxt(bytes: Uint8Array, offset: number, format: number, w: number, h: number, out: Uint8Array) {
+export function decodeDxt(bytes: Uint8Array, offset: number, format: number, w: number, h: number, out: Uint8Array) {
 	const blocksW = Math.max(1, Math.ceil(w / 4))
 	const blocksH = Math.max(1, Math.ceil(h / 4))
 	const bb = blockBytes(format)

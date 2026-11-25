@@ -5,7 +5,7 @@
 	"description": "Shows Source Engine VTF images inline in chat and send vtfs images straight up from discord.",
 	"author": "Loki-vtx",
 	"icon": "ImageIcon",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"
